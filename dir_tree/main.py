@@ -4,6 +4,7 @@
    Github: https://github.com/dragon-devs
 ---------------------------
 """
+import argparse
 import os
 
 
@@ -45,6 +46,23 @@ def save_project_structure_to_file(file_path):
       file.write(f"Total files: {num_files}\n")
    print(f"Project structure saved to {file_path}")
 
+def main():
+   parser = argparse.ArgumentParser(description='Display directory tree structure')
+   parser.add_argument('--output', '-o', metavar='FILE', help='Output file path')
+   args = parser.parse_args()
 
+   current_directory = os.getcwd()
+   tree, num_dirs, num_files = generate_tree_str(current_directory)
+
+   if args.output:
+      save_project_structure_to_file(args.output)
+   else:
+      print(tree)
+      print(f"Total directories: {num_dirs}")
+      print(f"Total files: {num_files}")
+
+
+if __name__ == "__main__":
+   main()
 if __name__ == "__main__":
    save_project_structure_to_file("current_directory_tree.txt")

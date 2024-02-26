@@ -7,11 +7,11 @@ This project directory is organized using a hierarchical structure to efficientl
 
 ## Installation
 ```
-$ pip install dir_tree
+pip install dir-tree-drh
 ```
 then run: 
 ```
-dir_tree
+dir-tree
 ``` 
 you will see your current directory tree in the console.
 

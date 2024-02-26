@@ -1,6 +1,6 @@
 import os
 
-import generate_tree
+from . import generate_tree
 
 
 def save_project_structure_to_file(file_path, include_hidden=False):

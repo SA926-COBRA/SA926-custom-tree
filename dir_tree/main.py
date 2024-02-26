@@ -7,9 +7,8 @@
 import os
 import argparse
 
-import generate_tree
-import save_tree_to_file
-
+from . import generate_tree
+from . import save_tree_to_file
 
 def main():
    parser = argparse.ArgumentParser(description='Display directory tree structure')

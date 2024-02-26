@@ -20,14 +20,18 @@ def generate_tree_str(folder_path, indent=''):
          branch = '├── '
          new_indent = indent + '│   '
       item_path = os.path.join(folder_path, item)
-      tree_str += f"{indent}{branch}{item}\n"
+      if os.path.isdir(item_path):
+         item_display = f"{item} <dir>"
+         num_dirs += 1
+      else:
+         item_display = item
+         num_files += 1
+      tree_str += f"{indent}{branch}{item_display}\n"
       if os.path.isdir(item_path):
          subtree, dirs, files = generate_tree_str(item_path, new_indent)
          tree_str += subtree
-         num_dirs += dirs + 1
+         num_dirs += dirs
          num_files += files
-      else:
-         num_files += 1
    return tree_str, num_dirs, num_files
 
 
@@ -43,4 +47,4 @@ def save_project_structure_to_file(file_path):
 
 
 if __name__ == "__main__":
-   save_project_structure_to_file("current_dir_tree.txt")
+   save_project_structure_to_file("current_directory_tree.txt")

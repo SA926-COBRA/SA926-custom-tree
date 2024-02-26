@@ -24,11 +24,13 @@ def generate_tree_str(folder_path, indent=''):
    return tree_str
 
 
-def show_project_structure():
+def save_project_structure_to_file(file_path):
    current_directory = os.getcwd()
-   print(f"Project structure for directory: {current_directory}\n")
-   print(generate_tree_str(current_directory))
+   tree = generate_tree_str(current_directory)
+   with open(file_path, 'w', encoding='utf-8') as file:
+      file.write(tree)
+   print(f"Project structure saved to {file_path}")
 
 
 if __name__ == "__main__":
-   show_project_structure()
+   save_project_structure_to_file("project_directory_tree.txt")

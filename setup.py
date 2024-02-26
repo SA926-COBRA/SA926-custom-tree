@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='dir_tree',
+    name='dir-tree-drh',
     version='1.0',
     packages=find_packages(),
     description="Creating a directory tree is an efficient method for visually organizing your project's directory structure, complete with detailed information. It provides a clear model of your project layout for easy reference and management.",
@@ -18,7 +18,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'dir-tree = dir_tree.main:main'
+            'dir-tree = dir_tree_structure.main:main'
         ]
     }
 )

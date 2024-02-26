@@ -6,9 +6,20 @@
 This project directory is organized using a hierarchical structure to efficiently manage and navigate through various files and directories. Below is a breakdown of the directory tree along with explanations for each directory and file.
 
 ## Installation
-`pip install dir_tree` then run `dir-tree` you will see your current directory tree in the console.
+```
+$ pip install dir_tree
+```
+then run: 
+```
+dir_tree
+``` 
+you will see your current directory tree in the console.
 
-**Saving Directory Tree:**  If you want to save the results of your current directory tree Run this `dir-tree --output file_name.txt` it will generate the results in the current directory file_name.txt.
+**Saving Directory Tree:**  If you want to save the results of your current directory tree Run this 
+```
+dir-tree --output file_name.txt
+```
+it will generate the results in the current directory `file_name.txt`.
 
 **Installation Path:** Ensure that the installation path for Python packages is included in your system's PATH environment variable. This path typically includes the Scripts directory inside the Python installation directory.
 

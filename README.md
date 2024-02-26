@@ -7,13 +7,13 @@ files and directories. Below is a breakdown of the directory tree along with exp
 
 ## Installation
 
-```
+```bash
 pip install dir-tree-drh
 ```
 
 then run:
 
-```
+```bash
 dir-tree
 ``` 
 
@@ -21,7 +21,7 @@ you will see your current directory tree in the console.
 
 **Saving Directory Tree:**  If you want to save the results of your current directory tree Run this
 
-```
+```bash
 dir-tree --output file_name.txt
 ```
 
@@ -136,7 +136,7 @@ my_project/
 │   └── ...
 ├── tests/
 │   ├── test.py
-│   └── ...
+│   -└── ...
 └── README.md
 ```
 
@@ -145,4 +145,4 @@ Including hidden directories can be useful for inspecting the entire directory s
 files (e.g., .git) or configuration directories (e.g., .config). However, be cautious when sharing or distributing
 directory tree structures that include hidden directories, as they may contain sensitive information.
 
-
+**If you have any issue please submit it here. https://github.com/dragon-devs/dir-tree-drh**

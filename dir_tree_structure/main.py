@@ -64,6 +64,7 @@ def main():
       print(tree)
       print(f"Total directories: {num_dirs}")
       print(f"Total files: {num_files}")
+      print(f"\nIf you liked it give us a star & follow for more :) ... https://github.com/dragon-devs/dir-tree-drh")
 
 
 if __name__ == "__main__":

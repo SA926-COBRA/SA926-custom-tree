@@ -9,7 +9,7 @@ setup(
     long_description_content_type='text/markdown',
     author='dragon-devs',
     author_email='dragonfourtyseven@email.com',
-    url='https://github.com/dragon-devs/dir_tree',
+    url='https://github.com/dragon-devs/dir-tree-drh',
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3',

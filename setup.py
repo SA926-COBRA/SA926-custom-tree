@@ -18,7 +18,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'dir-tree = dir_tree_structure.main:main'
+            'dir-tree = dir_tree.main:main'
         ]
     }
 )

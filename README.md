@@ -1,6 +1,5 @@
-<link href="https://cdn.jsdelivr.net/npm/lineicons@2.0.1/dist/LineIcons.min.css" rel="stylesheet">
 
-# Project Directory Tree
+# Custom Tree
 
 ## Overview
 
@@ -10,13 +9,13 @@ files and directories. Below is a breakdown of the directory tree along with exp
 ## Installation
 
 ```bash
-pip install dir-tree-drh
+pip install custom-tree
 ```
 
 then run:
 
 ```bash
-dir-tree
+custom-tree
 ``` 
 
 you will see your current directory tree in the console.
@@ -24,7 +23,7 @@ you will see your current directory tree in the console.
 **Saving Directory Tree:**  If you want to save the results of your current directory tree Run this
 
 ```bash
-dir-tree --output file_name.txt
+custom-tree --output OR -o file_name.txt
 ```
 
 it will generate the results in the current directory `file_name.txt`.
@@ -39,7 +38,7 @@ environment variable.
 location, you might need to investigate why the installation path is different.
 
 **Executable Name:** Ensure that the name specified in the `console_scripts` entry point in your `setup.py` matches the
-command you're trying to run. In this case, it should be `dir-tree`.
+command you're trying to run. In this case, it should be `custom-tree`.
 
 **Permissions:** Make sure that you have the necessary permissions to execute commands from the installed package.
 
@@ -76,16 +75,16 @@ project_directory/
 ```
 ## New Feature: Include Hidden Directories
 
-The `dir-tree` tool now supports including hidden directories in the directory tree structure. Hidden directories are
+The `custom-tree` tool now supports including hidden directories in the directory tree structure. Hidden directories are
 those whose names begin with a dot (`.`), such as `.git` or `.config`. By default, hidden directories are excluded from
 the tree structure.
 
 ### Usage
 
-To include hidden directories in the tree structure, use the `--hidden` flag when running the `dir-tree` command:
+To include hidden directories in the tree structure, use the `--hidden` flag when running the `custom-tree` command:
 
 ```bash
-dir-tree --hidden
+custom-tree --hidden
 ```
 
 **Example:**
@@ -143,4 +142,4 @@ Including hidden directories can be useful for inspecting the entire directory s
 files (e.g., .git) or configuration directories (e.g., .config). However, be cautious when sharing or distributing
 directory tree structures that include hidden directories, as they may contain sensitive information.
 
-**If you have any issue please submit it here. https://github.com/dragon-devs/dir-tree-drh**
+**If you have any issue please submit it here. https://github.com/dragon-devs/custom-tree**

@@ -1,3 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/lineicons@2.0.1/dist/LineIcons.min.css" rel="stylesheet">
+
 # Project Directory Tree
 
 ## Overview
@@ -47,39 +49,31 @@ command.
 ## Directory Tree
 ```
 project_directory/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   └── example/
-│   │   │   │       └── Main.java
-│   │   │   │
-│   │   │   ├── resources/
-│   │   │   │   └── config/
-│   │   │   │       └── application.properties
-│   │   │   │
-│   │   │   └── webapp/
-│   │   │       └── index.html
-│   │   │
-│   │   └── test/
-│   │       ├── java/
-│   │       │   └── com/
-│   │       │       └── example/
-│   │       │           └── MainTest.java
-│   │       │
-│   │       └── resources/
-│   │           └── test_config/
-│   │               └── test.properties
-│   │
-│   └── docs/
-│       └── documentation.md
-│
-├── README.md
-│
-└── LICENSE
-```
+📂 src/
+│   📂 main/
+│   │   📂 java/
+│   │   │   📂 com/
+│   │   │       📄 Main.java
+│   │   📂 resources/
+│   │   │   📂 config/
+│   │   │       📄 application.properties
+│   │   📂 webapp/
+│   │       📄 index.html
+│   📂 test/
+│   │   📂 java/
+│   │   │   📂 com/
+│   │   │       📄 MainTest.java
+│   │   │       📂 example/
+│   │   │           📄 MainTest.java
+│   │   📂 resources/
+│   │       📂 test_config/
+│   │           📄 test.properties
+📂 docs/
+│   📄 documentation.md
+📄 README.md
+📄 LICENSE
 
+```
 ## New Feature: Include Hidden Directories
 
 The `dir-tree` tool now supports including hidden directories in the directory tree structure. Hidden directories are
@@ -98,46 +92,50 @@ dir-tree --hidden
 Consider the following directory structure:
 
 ```
-my_project/
-├── .git/
-│   ├── config
-│   └── ...
-├── src/
-│   ├── main.py
-│   └── ...
-├── tests/
-│   ├── test.py
-│   └── ...
-└── README.md
+📁 my_project/
+|   📁 .git/
+|   |   📄 config
+|   |   \--- ...
+|   📁 src/
+|   |   📄 main.py
+|   |   \--- ...
+|   📁 tests/
+|   |   📄 test.py
+|   |   📁 test_directory/
+|   |   |   📄 test_file.txt
+|   |   \--- ...
+|   📄 README.md
 ```
 
 Without the --hidden flag, running dir-tree would output:
 
 ```
-my_project/
-├── src/
-│   ├── main.py
-│   └── ...
-├── tests/
-│   ├── test.py
-│   └── ...
-└── README.md
+📁 my_project/
+|   📄 src/
+|   |   📄 main.py
+|   |   \--- ...
+|   📄 tests/
+|   |   📄 test.py
+|   |   \--- ...
+|   📄 README.md
 ```
 
 With the `--hidden` flag, hidden directories are included:
 
 ```
-my_project/
-├── .git/
-│   ├── config
-│   └── ...
-├── src/
-│   ├── main.py
-│   └── ...
-├── tests/
-│   ├── test.py
-│   -└── ...
-└── README.md
+📁 my_project/
+|   📁 .git/
+|   |   📄 config
+|   |   \--- ...
+|   📁 src/
+|   |   📄 main.py
+|   |   \--- ...
+|   📁 tests/
+|   |   📄 test.py
+|   |   📁 test_directory/
+|   |   |   📄 test_file.txt
+|   |   \--- ...
+|   📄 README.md
 ```
 
 **Note:**

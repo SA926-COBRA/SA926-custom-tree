@@ -2,9 +2,7 @@
 # Custom Tree
 
 ## Overview
-
-This project directory is organized using a hierarchical structure to efficiently manage and navigate through various
-files and directories. Below is a breakdown of the directory tree along with explanations for each directory and file.
+This project is for getting customizable tree of your current directory or project. i will update it to get a complete structure of your project.
 
 ## Installation
 

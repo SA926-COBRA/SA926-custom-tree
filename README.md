@@ -1,5 +1,5 @@
 
-# Custom Tree
+# Custom Tree Project
 
 ## Overview
 This project is for getting customizable tree of your current directory or project. i will update it to get a complete structure of your project.
